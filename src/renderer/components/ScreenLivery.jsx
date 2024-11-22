@@ -1,6 +1,6 @@
 import React from 'react';
 import { getCurrentWindow } from '@electron/remote';
-import { useTheme, themes } from '../context/ThemeContext';
+import { useTheme, themes } from './Themes';
 import { Minus, X } from 'lucide-react';
 
 const ScreenLivery = () => {

@@ -1,6 +1,6 @@
 // src/renderer/App.jsx
 import React, { useState } from 'react';
-import { ThemeProvider, useTheme, themes } from './context/ThemeContext';
+import { ThemeProvider, useTheme, themes } from './components/Themes';
 import Sidebar from './components/Sidebar';
 import ScreenLivery from './components/ScreenLivery';
 import ServerList from './components/ServerList';

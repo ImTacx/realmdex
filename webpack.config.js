@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         main: './src/renderer/index.jsx'
     },
@@ -43,6 +43,7 @@ module.exports = {
     devServer: {
         static: path.join(__dirname, "dist"),
         port: 3000,
+        host: 'localhost',
         hot: true,
         devMiddleware: {
             writeToDisk: true

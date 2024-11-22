@@ -1,6 +1,6 @@
 // src/renderer/components/Notifications.jsx
 import React from 'react';
-import { useTheme, themes } from '../context/ThemeContext';
+import { useTheme, themes } from './Themes';
 import { AlertCircle, CheckCircle, XCircle, Info, X } from 'lucide-react';
 
 export const NotificationType = {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTheme, themes } from '../context/ThemeContext';
+import { useTheme, themes } from './Themes';
 import { Check } from 'lucide-react';
 import { useDownloadsManager } from '../hooks/useDownloadsManager';
 

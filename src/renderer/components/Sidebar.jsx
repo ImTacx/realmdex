@@ -2,7 +2,7 @@
 import React from 'react';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { Gamepad, Download, Settings } from 'lucide-react';
-import { useTheme, themes } from '../context/ThemeContext';
+import { useTheme, themes } from './Themes';
 
 const Sidebar = ({ activeTab, setActiveTab }) => {
     const { currentTheme } = useTheme();
@@ -27,7 +27,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
                             <Gamepad size={20} />
                         </div>
                     </Tooltip.Trigger>
-                    <Tooltip.Content side="right">
+                    <Tooltip.Content side="right" className="tooltip-content">
                         <div className={`${themes[currentTheme].card} text-white px-2 py-1 rounded shadow-lg`}>
                             Servers
                         </div>
@@ -45,7 +45,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
                             <Download size={20} />
                         </div>
                     </Tooltip.Trigger>
-                    <Tooltip.Content side="right">
+                    <Tooltip.Content side="right" className="tooltip-content">
                         <div className={`${themes[currentTheme].card} text-white px-2 py-1 rounded shadow-lg`}>
                             Download
                         </div>
@@ -63,7 +63,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
                             <Settings size={20} />
                         </div>
                     </Tooltip.Trigger>
-                    <Tooltip.Content side="right">
+                    <Tooltip.Content side="right" className="tooltip-content">
                         <div className={`${themes[currentTheme].card} text-white px-2 py-1 rounded shadow-lg`}>
                             Options
                         </div>
